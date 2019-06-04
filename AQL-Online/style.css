@@ -1,0 +1,339 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    font:inherit;
+    vertical-align:baseline
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block
+}
+ol,ul{
+    list-style:none
+}
+table{
+	border-collapse:collapse;
+    border-spacing:0
+}
+body{
+    box-sizing:border-box;
+    color:#373737;
+    background:#FFFFFF;
+    font-size:16px;
+    font-family:'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased
+}
+h1,h2,h3,h4,h5,h6{
+    margin:10px 0;
+    font-weight:700;
+    color:#222222;
+    font-family:'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+    letter-spacing:-1px
+}
+h1{
+    font-size:36px;
+    font-weight:700
+}
+h2{
+    padding-bottom:10px;
+    font-size:32px;
+    background:url("https://foellix.github.io/assets/images/bg_hr.png") repeat-x bottom
+}
+h3{
+    font-size:24px
+}
+h4{
+    font-size:21px
+}
+h5{
+    font-size:18px
+}
+h6{
+    font-size:16px
+}
+p{
+    margin:10px 0 15px 0
+}
+footer p{
+    color:#f2f2f2
+}
+a{
+    text-decoration:none;
+    color:#0F79D0;
+    text-shadow:none;
+    transition:color 0.5s ease;
+    transition:text-shadow 0.5s ease;
+    -webkit-transition:color 0.5s ease;
+    -webkit-transition:text-shadow 0.5s ease;
+    -moz-transition:color 0.5s ease;
+    -moz-transition:text-shadow 0.5s ease;
+    -o-transition:color 0.5s ease;
+    -o-transition:text-shadow 0.5s ease;
+    -ms-transition:color 0.5s ease;
+    -ms-transition:text-shadow 0.5s ease
+}
+a:hover,a:focus{
+    text-decoration:underline
+}
+footer a{
+    color:#F2F2F2;
+    text-decoration:underline
+}
+em,cite{
+    font-style:italic
+}
+strong{
+    font-weight:bold
+}
+img.github{
+    position:relative;
+    margin:0 auto;
+    max-width:739px;
+    padding:5px;
+    margin:10px 0 10px 0;
+    border:1px solid #ebebeb;
+    box-shadow:0 0 5px #ebebeb;
+    -webkit-box-shadow:0 0 5px #ebebeb;
+    -moz-box-shadow:0 0 5px #ebebeb;
+    -o-box-shadow:0 0 5px #ebebeb;
+    -ms-box-shadow:0 0 5px #ebebeb
+}
+p img{
+    display:inline;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    text-align:center;
+    border:none
+}
+pre,code{
+    color:#222;
+    background-color:#fff;
+    font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-size:14px;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px
+}
+pre{
+    padding:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    overflow:auto
+}
+code{
+    padding:3px;
+    margin:0 3px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1)
+}
+pre code{
+    display:block;
+    box-shadow:none
+}
+blockquote{
+    color:#666;
+    margin-bottom:20px;
+    padding:0 0 0 20px;
+    border-left:3px solid #bbb
+}
+ul,ol,dl{
+    margin-bottom:15px
+}
+ul{
+    list-style-position:inside;
+    list-style:disc;
+    padding-left:20px
+}
+ol{
+    list-style-position:inside;
+    list-style:decimal;
+    padding-left:20px
+}
+dl dt{
+    font-weight:bold
+}
+dl dd{
+    padding-left:20px;
+    font-style:italic
+}
+dl p{
+    padding-left:20px;
+    font-style:italic
+}
+hr{
+    height:1px;
+    margin-bottom:5px;
+    border:none;
+    background:url("https://foellix.github.io/assets/images/bg_hr.png") repeat-x center
+}
+table.github{
+    border:1px solid #373737;
+    margin-bottom:20px;
+    text-align:left
+}
+th{
+	text-align:left;
+	padding-bottom:10px;
+	font-weight: bold;
+}
+td.github{
+    padding:10px;
+    border:1px solid #373737
+}
+td{
+    padding-bottom:10px;
+}
+form{
+    background:#f2f2f2;
+    padding:20px
+}
+.outer{
+    width:100%
+}
+.inner{
+    position:relative;
+    max-width:640px;
+    padding:20px 10px;
+    margin:0 auto
+}
+
+@media screen and (max-width: 992px){
+    img{
+        max-width:100%
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size:14px
+    }
+    #downloads{
+        display:none
+    }
+    .inner{
+        min-width:320px;
+        max-width:480px
+    }
+    #project_title{
+        font-size:32px
+    }
+    h1{
+        font-size:28px
+    }
+    h2{
+        font-size:24px
+    }
+    h3{
+        font-size:21px
+    }
+    h4{
+        font-size:18px
+    }
+    h5{
+        font-size:14px
+    }
+    h6{
+        font-size:12px
+    }
+    code,pre{
+        font-size:11px
+    }
+}
+@media screen and (max-width: 320px){
+    body{
+        font-size:14px
+    }
+    #downloads{
+        display:none
+    }
+    .inner{
+        min-width:240px;
+        max-width:320px
+    }
+    #project_title{
+        font-size:28px
+    }
+    h1{
+        font-size:24px
+    }
+    h2{
+        font-size:21px
+    }
+    h3{
+        font-size:18px
+    }
+    h4{
+        font-size:16px
+    }
+    h5{
+        font-size:14px
+    }
+    h6{
+        font-size:12px
+    }
+    code,pre{
+        min-width:240px;
+        max-width:320px;
+        font-size:11px
+    }
+}
+
+/* FoelliX */
+div.content {
+	width:800px;
+	margin:0 auto;
+}
+
+div.item {
+	padding:20px;
+	background:#f2f2f2;
+}
+
+textarea { width:100%; resize: vertical; }
+
+.btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.btn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+	background-color:#68a54b;
+	text-decoration:none;
+}
+.btn:disabled {
+		-moz-box-shadow:inset 0px 1px 0px 0px #e6e6e6;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #e6e6e6;
+	box-shadow:inset 0px 1px 0px 0px #e6e6e6;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d4d4d4), color-stop(1, #a3a3a3));
+	background:-moz-linear-gradient(top, #d4d4d4 5%, #a3a3a3 100%);
+	background:-webkit-linear-gradient(top, #d4d4d4 5%, #a3a3a3 100%);
+	background:-o-linear-gradient(top, #d4d4d4 5%, #a3a3a3 100%);
+	background:-ms-linear-gradient(top, #d4d4d4 5%, #a3a3a3 100%);
+	background:linear-gradient(to bottom, #d4d4d4 5%, #a3a3a3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4d4d4', endColorstr='#a3a3a3',GradientType=0);
+	background-color:#d4d4d4;
+	border:1px solid #8c8c8c;
+}
