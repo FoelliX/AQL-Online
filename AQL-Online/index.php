@@ -10,8 +10,8 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="jquery.ns-autogrow.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ns-autogrow/1.1.6/jquery.ns-autogrow.min.js"></script>
 	</head>
 	<body>
 		<div class="content">
@@ -34,6 +34,7 @@
 			<form id="form" method="POST" enctype="multipart/form-data">
 				Please enter your <a href="https://github.com/FoelliX/AQL-System/wiki/Questions" target="_blank">AQL-Query</a> below:<br />
 				<textarea id="query" name="query" rows="10"></textarea><br />
+				<center>Use %FILE_1% to refer to your first APK, %FILE_2% for the second and so on.</center>
 				<br />
 				Select all .apk files involved:<br />
 				<input id="apps" name="files" type="file" multiple /><br />
@@ -94,7 +95,7 @@
 			}
 			
 			function available(){
-				$.get("<?php echo $webservice; ?>/index.html", function(data) {
+				$.get("<?php echo $webservice; ?>/ready", function(data) {
 					document.getElementById("available").innerHTML = "true";
 				}).fail(function() {
 					document.getElementById("available").innerHTML = "false";
@@ -136,8 +137,12 @@
 					var cell_apps = row.insertCell(1);
 					var cell_status = row.insertCell(2);
 					var cell_answer = row.insertCell(3);
-					cell_query.innerHTML = $("#query").val();
-					cell_apps.innerHTML = $("#apps").val();
+					cell_query.innerHTML = document.getElementById("query").value;
+					var apps = document.getElementById("apps").files[0].name;
+					for(var i = 1; i < document.getElementById("apps").files.length; i++) {
+						apps += ", " + document.getElementById("apps").files[i].name;
+					}
+					cell_apps.innerHTML = apps;
 					cell_status.innerHTML = "Uploading..";
 					cell_answer.innerHTML = "-";
 
